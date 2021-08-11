@@ -1,0 +1,10 @@
+release/main.o
+release/mainfrom.o
+release/xmlparsing.o
+release/ncparsing.o
+release/simworker.o
+release/moc_mainfrom.o
+release/moc_xmlparsing.o
+release/moc_ncparsing.o
+release/moc_simworker.o
+release/moc_simparameter.o

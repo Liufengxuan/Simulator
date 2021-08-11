@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Project Name="P20180915055751">
+    <Panels>
+      <Panel ID="20210806115436" Name="20210806115436" Width="352." Length="500." Thickness="15." Material="" MachiningPoint="" IsProduce="0" Face5ID="" Face6ID="" OrderNo="" Grain="">
+        <Outline />
+        <Machines>
+          <Machining ID="f8452fabe3ea4dad9fbc4dcfdc89ad7d" Type="1" IsGenCode="2" Face="3" X="500" Y="187.5456" Z="6." Depth="25." Width="" Diameter="8." EndX="500" EndY="" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="c0ffc32b4f0542ae9d177211123c1acd" Type="1" IsGenCode="2" Face="3" X="500" Y="164.4544" Z="6." Depth="25." Width="" Diameter="8." EndX="500" EndY="352" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="d4ae9f296a314522ac60e9347f771bd7" Type="1" IsGenCode="2" Face="4" X="0" Y="187.5456" Z="6." Depth="25." Width="" Diameter="8." EndX="" EndY="" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="f1e5c041b76d45f3957ac58b5caea436" Type="1" IsGenCode="2" Face="4" X="0" Y="164.4544" Z="6." Depth="25." Width="" Diameter="8." EndX="" EndY="352" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="db8e5fc471ee42f181826460f4fc0438" Type="2" IsGenCode="2" Face="5" X="25" Y="187.5456" Z="6." Depth="10." Width="" Diameter="15." EndX="" EndY="" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="40c26f3f83fc479aa6adec76cb7f8b90" Type="2" IsGenCode="2" Face="5" X="25" Y="164.4544" Z="6." Depth="10." Width="" Diameter="15." EndX="" EndY="352" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="182720595c764231867bb59cf576c261" Type="2" IsGenCode="2" Face="5" X="475" Y="187.5456" Z="6." Depth="10." Width="" Diameter="15." EndX="500" EndY="" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="78a986117e804707ae89d4dd5f11b180" Type="2" IsGenCode="2" Face="5" X="475" Y="164.4544" Z="6." Depth="10." Width="" Diameter="15." EndX="500" EndY="352" ToolOffset="" EdgeABThickness="" />
+          <Machining ID="0ad0229e90164852b0ca1c2588704d45" Type="4" IsGenCode="2" Face="6" X="0" Y="286.9168" Z="0" Depth="2." Width="10." Diameter="" EndX="500" EndY="286.9168" ToolOffset="中" EdgeABThickness="0" />
+        </Machines>
+        <EdgeGroup>
+          <Edge Material="" Thickness="0." Face="1" />
+          <Edge Material="" Thickness="0." Face="2" />
+          <Edge Material="" Thickness="0." Face="4" />
+          <Edge Material="" Thickness="0." Face="3" />
+        </EdgeGroup>
+      </Panel>
+    </Panels>
+  </Project>
+</Root>

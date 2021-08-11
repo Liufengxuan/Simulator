@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainfrom.o
+debug/xmlparsing.o
+debug/ncparsing.o
+debug/simworker.o
+debug/moc_mainfrom.o
+debug/moc_xmlparsing.o
+debug/moc_ncparsing.o
+debug/moc_simworker.o
+debug/moc_simparameter.o
