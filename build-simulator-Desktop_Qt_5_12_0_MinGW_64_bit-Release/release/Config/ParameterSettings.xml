@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+<ParameterSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BasicSetups>
+    <BasicSetup Name="PartLengthMax" Value="3050" Description="B.可加工板件的最大长度(夹钳方向)" ReadOnly="true" />
+    <BasicSetup Name="PartLengthMin" Value="200" Description="B.可加工板件的最小长度(夹钳方向)" ReadOnly="true" />
+    <BasicSetup Name="PartWidthMax" Value="1220" Description="B.可加工板件的最大宽度(钻包运动方向)" ReadOnly="true" />
+    <BasicSetup Name="PartWidthMin" Value="30" Description="B.可加工板件的最小宽度(钻包运动方向)" ReadOnly="true" />
+    <BasicSetup Name="MaxHorHoleDepth" Value="32" Description="B.允许加工水平孔的最大深度" ReadOnly="true" />
+    <BasicSetup Name="OutputHorHoles" Value="1" Description="C.是否加工水平孔(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputVerHoles" Value="1" Description="C.是否加工正面垂直孔(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputVerHolesBack" Value="1" Description="C.是否加工反面垂直孔(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputSlots" Value="1" Description="C.是否加工正面槽(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputSlotsBack" Value="1" Description="C.是否加工反面槽(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputInsideMills" Value="1" Description="C.是否加工正面内部铣型(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputInsideMillsBack" Value="1" Description="C.是否加工反面内部铣型(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="OutputShape" Value="1" Description="C.是否加工异形板件的外轮廓(1:时加工，0:不加工)" ReadOnly="false" />
+    <BasicSetup Name="ThroughHoleAddDepth" Value="2" Description="B.通孔拆分为上下两孔加工时，孔的深度需要在板厚度一半的基础上追加的深度，建议为2毫米" ReadOnly="true" />
+    <BasicSetup Name="IsMultiCut" Value="1" Description="B.上主轴切割板件外轮廓时，是否进行分次切割(0:不启用 1:启用)" ReadOnly="true" />
+    <BasicSetup Name="PerCutDepth" Value="10" Description="B.上主轴切割板件外轮廓时，启用分次切割时，每次切割的深度" ReadOnly="true" />
+    <BasicSetup Name="AdditionalDepth" Value="0" Description="B.上主轴切割板件外轮廓时，切透切割的追加深度，防止切割不透" ReadOnly="true" />
+    <BasicSetup Name="PawLength" Value="130" Description="B.夹钳长度(X方向)" ReadOnly="true" />
+    <BasicSetup Name="PawWidth" Value="30" Description="B.夹钳宽度(Y方向)，指夹在板件上的有效宽度" ReadOnly="true" />
+    <BasicSetup Name="EnableSinglePaw" Value="1" Description="B.是否允许单夹钳夹持板件(0:不允许 1:允许)" ReadOnly="true" />
+    <BasicSetup Name="SinglePawLengthMin" Value="80" Description="B.单夹钳最小夹持长度" ReadOnly="true" />
+    <BasicSetup Name="DoublePawLengthMin" Value="30" Description="B.双夹钳最小夹持长度" ReadOnly="true" />
+    <BasicSetup Name="PawSafeDistance" Value="30" Description="B.两夹钳之间最小安全距离" ReadOnly="true" />
+    <BasicSetup Name="PawMinRange" Value="-1770" Description="A.X夹钳的最小行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="PawMaxRange" Value="2680" Description="A.X夹钳的最大行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="PawOpenDelay" Value="0" Description="B.夹钳松开延时，单位是毫秒。确保夹钳松开到位" ReadOnly="true" />
+    <BasicSetup Name="PawCloseDelay" Value="0" Description="B.夹钳闭合延时，单位是毫秒。确保夹钳已经夹紧" ReadOnly="true" />
+    <BasicSetup Name="HorMaxDistanceFromPaw" Value="200" Description="B.允许水平孔加工距离夹钳的最远距离" ReadOnly="true" />
+    <BasicSetup Name="TrenchMin" Value="512" Description="A.机器壕沟最小值对应的X坐标(G54)" ReadOnly="false" />
+    <BasicSetup Name="TrenchMax" Value="637" Description="A.机器壕沟最大值对应的X坐标(G54)" ReadOnly="false" />
+    <BasicSetup Name="DownSupportingMin" Value="-1125" Description="A.下托料的最小行程位置(G54)" ReadOnly="false" />
+    <BasicSetup Name="DownSupportingMax" Value="-80" Description="A.下托料的最大行程位置(G54)" ReadOnly="false" />
+    <BasicSetup Name="McSupportingBlowDelay" Value="0" Description="B.下托料吹气延时(ms)" ReadOnly="true" />
+    <BasicSetup Name="UseOnlyG5000" Value="1" Description="A.上料方式(0:手动上料 1:自动上料)" ReadOnly="false" />
+    <BasicSetup Name="PartExitStyle" Value="1" Description="A.出料方式(0:为前出料 1为后出料)" ReadOnly="false" />
+    <BasicSetup Name="BoardExitPos2" Value="1500" Description="B.加工结束后，板件的后出料位置" ReadOnly="true" />
+    <BasicSetup Name="BoardExitPos" Value="-50" Description="B.加工结束后，板件的前出料位置" ReadOnly="true" />
+    <BasicSetup Name="StartNextDistance" Value="100" Description="B.允许下一块板件上料时，板尾X工件坐标" ReadOnly="true" />
+    <BasicSetup Name="NCPathDir" Value="D:\NC" Description="B.NC文件的保存路径" ReadOnly="true" />
+    <BasicSetup Name="NCFileNameType" Value="1" Description="B.是否使用板件的条码名称作为NC文件名，该值为1时使用条码作为NC文件名，为0时使用固定NC文件名称" ReadOnly="true" />
+    <BasicSetup Name="NCFileName" Value="nc0001" Description="B.NC文件名称。当加工文件是固定文件名字时，需要使用到该值" ReadOnly="true" />
+    <BasicSetup Name="NCExt" Value=".nc" Description="B.NC文件后缀，可以为空，如果要设置NC文件的后缀，应该以“.”开头，比如：.nc" ReadOnly="true" />
+    <BasicSetup Name="IgnoreBackwardNumber" Value="0" Description="C.扫描条码后，忽略条码中的倒数第几位，该值大于0时该设置起作用" ReadOnly="false" />
+    <BasicSetup Name="MprSharedDirectory" Value="" Description="C.MPR监控目录，扫描到条码后从该目录下加载板件数据" ReadOnly="false" />
+    <BasicSetup Name="MprGetSubFile" Value="0" Description="C.是否读取子目录mpr文件：0不读取，1读取" ReadOnly="false" />
+    <BasicSetup Name="MprBackwardsNumber" Value="4" Description="C.使用文件名字的倒数第几位来区分MPR正反面" ReadOnly="false" />
+    <BasicSetup Name="MprFaceCharacter" Value="1" Description="C.MPR文件名称中用于识别正面数据的字符，可以为一个数字或者是一个字母" ReadOnly="false" />
+    <BasicSetup Name="MprBackCharacter" Value="2" Description="C.MPR文件名称中用于识别为反面数据的字符，可以为一个数字或者是一个字母。" ReadOnly="false" />
+    <BasicSetup Name="MprMergeType" Value="0" Description="C.MPR正反面数据合并方式:0不合并；1左右翻转合并;2上下翻转合并" ReadOnly="false" />
+    <BasicSetup Name="SecondMprRuleWordsNumber" Value="0" Description="C.MPR条码第几位数区分第二规则条码。不启用填0；启用填正向条码位数" ReadOnly="false" />
+    <BasicSetup Name="SecondMprRuleWordsFlag" Value="1|2" Description="C.MPR条码第二规则条码标志符;含多个字符用竖线分割。如：0|9，认为标识符为0或者9" ReadOnly="false" />
+    <BasicSetup Name="SecondMprBackwardsNumber" Value="4" Description="C.使用文件名字的倒数第几位来区分第二规则条码MPR正反面。" ReadOnly="false" />
+    <BasicSetup Name="SecondMprFaceCharacter" Value="1" Description="C.MPR文件名称中用于识别第二规则条码正面数据的字符，可以为一个数字或者是一个字母。" ReadOnly="false" />
+    <BasicSetup Name="SecondMprBackCharacter" Value="9" Description="C.第二规则条码MPR文件名称中用于识别为反面数据的字符，可以为一个数字或者是一个字母。" ReadOnly="false" />
+    <BasicSetup Name="PawVerSafeDistance" Value="10" Description="B.上钻包垂直钻到夹钳的安全距离" ReadOnly="true" />
+    <BasicSetup Name="PawSDrillSafeDistance" Value="10" Description="B.下钻包垂直钻到夹钳的安全距离" ReadOnly="true" />
+    <BasicSetup Name="PawHorSafeDistance" Value="28" Description="B.水平钻到夹钳的安全距离" ReadOnly="true" />
+    <BasicSetup Name="MainSafeDistance" Value="30" Description="A.正面主轴到夹钳的安全距离" ReadOnly="false" />
+    <BasicSetup Name="SMainSafeDistance" Value="65" Description="A.反面主轴到夹钳的安全距离X方向" ReadOnly="false" />
+    <BasicSetup Name="SYMainSafeDistance" Value="20" Description="A.反面主轴到夹钳的安全距离Y方向" ReadOnly="false" />
+    <BasicSetup Name="AbsSafeHeight" Value="70" Description="A.闭合夹钳时上钻包的位移绝对安全高度" ReadOnly="false" />
+    <BasicSetup Name="AbsSDrillHeight" Value="-77" Description="A.下钻包的位移绝对安全高度" ReadOnly="false" />
+    <BasicSetup Name="McPackageInterval" Value="160" Description="A.上钻包间的最小安全间距" ReadOnly="false" />
+    <BasicSetup Name="YMax" Value="520" Description="A.上钻包最大行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="YMin" Value="-1320" Description="A.上钻包最小行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="YSMax" Value="42" Description="A.下钻包最大行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="YSMin" Value="-1177" Description="A.下钻包最小行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="PressSafeDistance1" Value="10" Description="B.压轮或压板到夹钳的安全距离" ReadOnly="true" />
+    <BasicSetup Name="PressSafeDistance2" Value="5" Description="B.压轮或压板到侧靠的安全距离" ReadOnly="true" />
+    <BasicSetup Name="PressMinLength" Value="10" Description="B.允许压板压住板件的最小长度(压板和板件的投影)" ReadOnly="true" />
+    <BasicSetup Name="MainPressMinLength" Value="20" Description="B.允许主轴压板压住板件的最小长度(压料和板件的投影)" ReadOnly="true" />
+    <BasicSetup Name="WheelOutMinLength" Value="20" Description="B.允许压轮超出板件的最大长度" ReadOnly="true" />
+    <BasicSetup Name="MainPressYMax" Value="287" Description="A.与夹钳存在干涉时主轴压板的最大行程(G54)" ReadOnly="false" />
+    <BasicSetup Name="X1AxisID" Value="X1" Description="B.X1轴标识符，注意这里指的是夹钳1对应的轴" ReadOnly="true" />
+    <BasicSetup Name="X2AxisID" Value="X2" Description="B.X2轴标识符，注意这里指的是夹钳2对应的轴" ReadOnly="true" />
+    <BasicSetup Name="Y2AxisID" Value="Y1" Description="B.Y2轴标识符，注意这里指的上钻包2对应的Y轴" ReadOnly="true" />
+    <BasicSetup Name="Z2AxisID" Value="Z1" Description="B.Z2轴标识符，指的是上钻包2对应的进行上下运动的轴" ReadOnly="true" />
+    <BasicSetup Name="Y3AxisID" Value="Y2" Description="B.Y3轴标识符，注意这里指的是下钻包对应的运动轴" ReadOnly="true" />
+    <BasicSetup Name="Z3AxisID" Value="Z2" Description="B.Z3轴标识符，指的是下钻包进行上下运动的轴" ReadOnly="true" />
+    <BasicSetup Name="VAxisID" Value="W" Description="B.侧靠轴对应的标识符" ReadOnly="true" />
+    <BasicSetup Name="SingleFaceFlipStyle" Value="0" Description="C.板件翻板方式:0不翻板;1板子反面加工元素多于正面元素时翻板;2板子反面有槽且正面无槽时翻板" ReadOnly="false" />
+    <BasicSetup Name="isBigHolePositiveProcess" Value="35" Description="C.反面有直径大于等于所填数值的孔,强制翻转到正面加工。参数大于0时起作用" ReadOnly="false" />
+    <BasicSetup Name="PartRotateStyle" Value="0" Description="C.板件旋转方式:0尽量避让夾爪;1不旋转;2旋转180或90;3旋转180或270;4旋转180;5旋转180或270,优先榫槽在夹钳对侧;6不旋转或90;7旋转180或90,14直径的水平孔在夹钳侧或夹钳对侧加工。8不旋转或180，榫槽和孔多的面优先在夹钳对侧" ReadOnly="false" />
+    <BasicSetup Name="ForceHorSlot" Value="0" Description="C.强制将垂直槽的板子旋转90度" ReadOnly="false" />
+    <BasicSetup Name="HolesSortingStyle" Value="2" Description="B.孔位加工顺序优化规则：0顺序加工；1上下分段加工；2左右分段加工" ReadOnly="true" />
+    <BasicSetup Name="PerLenForSorting" Value="300" Description="B.最短路径分段优化时，每段的长度" ReadOnly="true" />
+    <BasicSetup Name="EnableSide" Value="1" Description="C.是否启用侧靠" ReadOnly="false" />
+    <BasicSetup Name="SideBackerInit" Value="10" Description="B.侧靠初始距离" ReadOnly="true" />
+    <BasicSetup Name="SideOrigin" Value="G53  W0." Description="B.侧靠回原点代码，当不启用侧靠是会用到该代码" ReadOnly="true" />
+    <BasicSetup Name="UsingSideWidthMax" Value="1200" Description="B.当板件的宽度大于该值时，不启用侧靠" ReadOnly="true" />
+    <BasicSetup Name="UsingSideWidthMin" Value="120" Description="B.当板件的宽度小于该值时，不启用侧靠" ReadOnly="true" />
+    <BasicSetup Name="UsingSideLengthMin" Value="230" Description="B.当板件的长度小于该值时，不启用侧靠" ReadOnly="true" />
+    <BasicSetup Name="EnableSizeCheck" Value="1" Description="C.是否启用尺寸检测" ReadOnly="false" />
+    <BasicSetup Name="DisableSizeCheckIfShaped" Value="1" Description="B.异形板是否强制不启用尺寸检测" ReadOnly="true" />
+    <BasicSetup Name="McMainStart" Value="M63" Description="B.上主轴启动代码" ReadOnly="true" />
+    <BasicSetup Name="McMainEnd" Value="M45" Description="B.上主轴停止代码" ReadOnly="true" />
+    <BasicSetup Name="McSMainStart" Value="M73" Description="B.下主轴启动代码" ReadOnly="true" />
+    <BasicSetup Name="McSMainEnd" Value="M55" Description="B.下主轴停止代码" ReadOnly="true" />
+    <BasicSetup Name="McDrillStart1" Value="M33" Description="B.上钻包1排钻组启动代码" ReadOnly="true" />
+    <BasicSetup Name="McDrillEnd1" Value="M35" Description="B.上钻包1排钻组停止代码" ReadOnly="true" />
+    <BasicSetup Name="McDrillStart2" Value="M13" Description="B.上钻包2排钻组启动代码" ReadOnly="true" />
+    <BasicSetup Name="McDrillEnd2" Value="M15" Description="B.上钻包2排钻组停止代码" ReadOnly="true" />
+    <BasicSetup Name="McSDrillStart" Value="M23" Description="B.下钻包排钻启动代码" ReadOnly="true" />
+    <BasicSetup Name="McSDrillEnd" Value="M25" Description="B.下钻包排钻停止代码" ReadOnly="true" />
+    <BasicSetup Name="McPawsAllOpen" Value="M308" Description="B.双夹钳松开" ReadOnly="true" />
+    <BasicSetup Name="McPawsAllClose" Value="M307" Description="B.双夹钳夹紧" ReadOnly="true" />
+    <BasicSetup Name="McPaw1Loosen" Value="M310" Description="B.夹钳1松开" ReadOnly="true" />
+    <BasicSetup Name="McPaw1Close" Value="M309" Description="B.夹钳1夹紧" ReadOnly="true" />
+    <BasicSetup Name="McPaw2Loosen" Value="M312" Description="B.夹钳2松开" ReadOnly="true" />
+    <BasicSetup Name="McPaw2Close" Value="M311" Description="B.夹钳2夹紧" ReadOnly="true" />
+    <BasicSetup Name="McMainPreStart" Value="M43" Description="B.上主轴预启动" ReadOnly="true" />
+    <BasicSetup Name="McSMainPreStart" Value="M53" Description="B.下主轴预启动" ReadOnly="true" />
+    <BasicSetup Name="McDrillPreStart1" Value="M33" Description="B.上钻包1预启动" ReadOnly="true" />
+    <BasicSetup Name="McDrillPreStart2" Value="M13" Description="B.上钻包2预启动" ReadOnly="true" />
+    <BasicSetup Name="McSDrillPreStart" Value="M23" Description="B.下钻包预启动" ReadOnly="true" />
+    <BasicSetup Name="McSupportingBlow" Value="M345" Description="B.控制下托料吹气M代码" ReadOnly="true" />
+    <BasicSetup Name="McSideIn" Value="M447 {P=%K}" Description="B.侧靠推进" ReadOnly="true" />
+    <BasicSetup Name="McSideOut" Value="M448\r\nG00 W=%K" Description="B.侧靠收回" ReadOnly="true" />
+    <BasicSetup Name="McSideInDelay" Value="0" Description="B.侧靠推进延时" ReadOnly="true" />
+    <BasicSetup Name="McSideOutDelay" Value="0" Description="B.侧靠收回延时" ReadOnly="true" />
+    <BasicSetup Name="McTableUpCode" Value="M348" Description="B.台面上升" ReadOnly="true" />
+    <BasicSetup Name="McTableDownCode" Value="M347" Description="B.台面下降" ReadOnly="true" />
+    <BasicSetup Name="McMainEndDelay" Value="0" Description="B.上主轴停止延时" ReadOnly="true" />
+    <BasicSetup Name="McSMainEndDelay" Value="0" Description="B.下主轴停止延时" ReadOnly="true" />
+    <BasicSetup Name="McPartBackExit" Value="M405" Description="B.后出料对应的代码" ReadOnly="true" />
+    <BasicSetup Name="UpAllDrill" Value="M350" Description="B.收起所有排钻" ReadOnly="true" />
+    <BasicSetup Name="McMainUp" Value="M301" Description="B.上主轴上（启用主轴压料时）" ReadOnly="true" />
+    <BasicSetup Name="McMainDown" Value="M302" Description="B.上主轴下（启用主轴压料时）" ReadOnly="true" />
+    <BasicSetup Name="StartNext" Value="M402" Description="B.允许下一块板件上料M代码" ReadOnly="true" />
+    <BasicSetup Name="DefaultY3" Value="-160" Description="B.下钻包初始默认Y坐标(G54)" ReadOnly="true" />
+    <BasicSetup Name="IsPreview" Value="1" Description="C.是否启用预览图" ReadOnly="false" />
+    <BasicSetup Name="ToolSuffix" Value="" Description="B.调刀后缀" ReadOnly="true" />
+    <BasicSetup Name="IsMainDownEnable" Value="1" Description="B.上主轴压料使用时，是否启用上主轴下命令" ReadOnly="true" />
+    <BasicSetup Name="LoadNcDelay" Value="500" Description="B.系统加载NC延时" ReadOnly="true" />
+    <BasicSetup Name="IsFilterSizeLimit" Value="1" Description="B.是否过滤尺寸超极限的板件" ReadOnly="true" />
+    <BasicSetup Name="RuleOutDrillToHorLength" Value="28" Description="B.使用外侧钻头加工水平孔的长度" ReadOnly="true" />
+    <BasicSetup Name="PressOutWidth" Value="0" Description="B.钻包1压料3机械冗余的宽度" ReadOnly="true" />
+    <BasicSetup Name="XYPawMinWidth" Value="200" Description="A.出料时板件宽度小于某个数值需要判断夹钳气缸是否动作" ReadOnly="false" />
+    <BasicSetup Name="XYPawMinValue" Value="35" Description="A.出料时小板需要判断双夹钳是否夹持板件最小值" ReadOnly="false" />
+    <BasicSetup Name="XYPawMinDelay" Value="200" Description="A.出料时小板被推延时" ReadOnly="false" />
+    <BasicSetup Name="SpindleStartDelay" Value="0" Description="B.主轴启动延时" ReadOnly="true" />
+    <BasicSetup Name="VacToPawSafeHeight" Value="40" Description="B.吸尘装置到夹钳Z方向安全高度距离" ReadOnly="true" />
+    <BasicSetup Name="DetectionAllUp" Value="M442" Description="B.Z 压板、压轮及主轴压料收回检测M码" ReadOnly="true" />
+    <BasicSetup Name="DetectionUpMainUp" Value="M426" Description="B.Z 上主轴上到位检测" ReadOnly="true" />
+    <BasicSetup Name="DetectionDownMainDown" Value="M429" Description="B.Z 主轴下到位检测" ReadOnly="true" />
+    <BasicSetup Name="SpindleDownDelay" Value="0" Description="B.上下主轴打出后延时" ReadOnly="true" />
+    <BasicSetup Name="GetBackwardNumber" Value="0" Description="C.扫描条码后，截取板件条码前多少位" ReadOnly="false" />
+    <BasicSetup Name="BlowZHeight" Value="-70" Description="A.Z 吹气下钻包Z高度" ReadOnly="false" />
+    <BasicSetup Name="VerMaxDistanceFromPaw" Value="600" Description="B.允许垂直孔加工距离夹钳的最远距离" ReadOnly="true" />
+    <BasicSetup Name="BoardExitPos2Second" Value="800" Description="B.加工结束后，大于2000的板件的后出料位置" ReadOnly="true" />
+    <BasicSetup Name="MaxZHeight" Value="126" Description="A.Z 带主轴的上钻包Z1正向极限值" ReadOnly="false" />
+    <BasicSetup Name="McLinkMachine" Value="" Description="C.自动上下线联机模式下的M指令（不联机不填，联机填M444）" ReadOnly="false" />
+    <BasicSetup Name="MotorLength" Value="0" Description="B.背面孔加工时，考虑夹钳旁边电机装置的长度" ReadOnly="true" />
+    <BasicSetup Name="BackFaceIsThirdDrillWidth" Value="1180" Description="B.根据孔位排布 ，孔位在板子上Y值大于某数值部分启用第三排钻" ReadOnly="true" />
+    <BasicSetup Name="BackFaceHeight" Value="10" Description="B.背面孔连续加工时，主轴压料微抬高度(mm)" ReadOnly="true" />
+    <BasicSetup Name="WHDrillDownDelayTime" Value="0" Description="B.维宏系统排钻打下需延时时间（单位ms）" ReadOnly="true" />
+    <BasicSetup Name="DoublePawLengthMinSmall" Value="30" Description="B.长度小于L1(默认300)的板子 双夹钳最小夹持长度(针对水平孔加工时设置)" ReadOnly="true" />
+    <BasicSetup Name="L1" Value="300" Description="B.L1数值，默认300(针对水平孔加工时设置)" ReadOnly="true" />
+    <BasicSetup Name="HorMaxDistanceFromPawSmall" Value="28" Description="B.宽度小于W1(默认100)的板子 夹钳距离水平孔的最大距离(针对水平孔加工时设置）" ReadOnly="true" />
+    <BasicSetup Name="W1" Value="100" Description="B.W1数值，默认100(针对水平孔加工时设置)" ReadOnly="true" />
+    <BasicSetup Name="PawUpAbsSafeHeight" Value="90" Description="A.夹钳松开时上钻包的位移绝对安全高度" ReadOnly="false" />
+    <BasicSetup Name="DoubleBoardMac" Value="0" Description="C.0：单板加工；1：双板镜像加工；2：左右翻板；3：上下翻板" ReadOnly="false" />
+    <BasicSetup Name="BoardProcessStyle" Value="0" Description="C.板件加工方式 0：从前往后（默认） 1：从后往前" ReadOnly="false" />
+    <BasicSetup Name="LongPartSize" Value="2800" Description="B.超长板最小尺寸:上料动作M403测量指令替换为M00暂停指令，手动放板定位" ReadOnly="true" />
+    <BasicSetup Name="MachingOutPartSize" Value="0" Description="C.允许加工超出板件尺寸限制长度" ReadOnly="false" />
+    <BasicSetup Name="HorHoleLimitPartSize" Value="300" Description="B.板材尺寸小于该数值，水平孔单独加工" ReadOnly="true" />
+    <BasicSetup Name="DownSupportingOutPartSize" Value="0" Description="B.打孔时允许下托料出来板子长度（侧靠不启用的条件下，该参数起作用）" ReadOnly="true" />
+    <BasicSetup Name="LoadPartUPawMinLength" Value="0" Description="B.Z 双夹钳夹板上料时U夹钳的最小夹持尺寸，防止板子被推出夹钳（仅针对自动上料机型有效）" ReadOnly="true" />
+    <BasicSetup Name="BackHoleToMotorSafeDistance" Value="50" Description="B.夹钳侧反面孔距离板边距离小于该数值，认为存在夹钳侧范围内反面孔" ReadOnly="true" />
+    <BasicSetup Name="EnableRotate180" Value="0" Description="B.0：不启用此规则，1：启用此规则；满足旋转规则2、3的情况下，夹钳极限侧是否存在背面孔，需旋转180。" ReadOnly="true" />
+    <BasicSetup Name="SmallPartLenthForSorting" Value="300" Description="B.小板件分段限制尺寸。小于该尺寸使用小板件打孔X方向分段每段的长度。" ReadOnly="true" />
+    <BasicSetup Name="SmallPartPerLenForSorting" Value="200" Description="B.小板件打孔X方向打孔分段每段的长度。" ReadOnly="true" />
+    <BasicSetup Name="XmlSharedDirectory" Value="" Description="C.xml监控目录，扫描到条码后从该目录下加载板件数据" ReadOnly="false" />
+    <BasicSetup Name="OversizeMortise" Value="0" Description="B.榫槽在原先长度基础头尾延长所填尺寸加工" ReadOnly="true" />
+    <BasicSetup Name="ArcPrecision" Value="2" Description="B.圆弧序列化精度(单位：mm)，不填写默认1mm" ReadOnly="true" />
+    <BasicSetup Name="CheckSizeMCode" Value="" Description="B.尺寸检测M代码，仅用于手动上料机型" ReadOnly="true" />
+    <BasicSetup Name="OriginPosToBasedDrill" Value="30" Description="A.定位柱在机头机型，定位柱到基准钻的偏置(Y方向)" ReadOnly="false" />
+    <BasicSetup Name="PartWidthLimitUPaw" Value="80" Description="A.板件宽度小于该尺寸，上料时U夹钳的夹板位置距板边要满足限制长度该值大于0时起作用(定位柱在机头机型必填)" ReadOnly="false" />
+    <BasicSetup Name="UPawPosToPartEdge" Value="10" Description="A.板件宽度满足时，上料时U夹钳距板边限制长度(定位柱在机头机型必填)" ReadOnly="false" />
+    <BasicSetup Name="CheckLengthOffset" Value="200" Description="A.Z 定位柱到光眼的距离(X方向距离，定位柱在机头机型设置成0)启动长度测量,该参数起作用，手动上料机型" ReadOnly="false" />
+    <BasicSetup Name="CheckOffsetFromBaseDrill" Value="148.8" Description="A.Z 基准钻到光眼的偏移距离(Y方向距离，单位：mm)，默认基准钻在光眼正方向,填正数，仅用于手动上料机型" ReadOnly="false" />
+    <BasicSetup Name="LengthLimitMachFromFront" Value="300" Description="B.长度小于该尺寸的板件，默认板头到板尾加工(单位：mm)" ReadOnly="true" />
+    <BasicSetup Name="HorLimitFromFace" Value="20" Description="B.水平孔距离板材上表面限制尺寸(单位：mm)" ReadOnly="true" />
+    <BasicSetup Name="ScannerDelayTime" Value="2" Description="C.此时间内，扫描枪扫到相同板件不做处理，为0时此参数不起作用" ReadOnly="false" />
+    <BasicSetup Name="EnDisplayDimensions" Value="1" Description="B.是否显示孔位标注 0:不显示；1：显示" ReadOnly="true" />
+    <BasicSetup Name="IsUnderSpindlePriority" Value="0" Description="A.是否启用先下主轴，再排钻，再上主轴加工模式。0：不启用；1：启用" ReadOnly="false" />
+    <BasicSetup Name="HorShapePMacLimt" Value="1" Description="B.是否加工异形处的水平孔，该参数在异形板件或者加工异形轮廓时起作用 0:不加工;1:加工" ReadOnly="true" />
+    <BasicSetup Name="EnableFaceBAviod1" Value="1" Description="A.是否启用反面避让参数组1（1：启用，0：不启用）" ReadOnly="true" />
+    <BasicSetup Name="FaceBAviod1Y" Value="-80" Description="A.启用反面避让参数组1时，下钻包Y轴临界值(G54)" ReadOnly="false" />
+    <BasicSetup Name="FaceBLeft1X" Value="520" Description="A.反面避让参数组1中夹钳避让范围：小值(G54)" ReadOnly="false" />
+    <BasicSetup Name="FaceBRight1X" Value="605" Description="A.反面避让参数组1中夹钳避让范围：大值(G54)" ReadOnly="false" />
+    <BasicSetup Name="EnableFaceBAviod2" Value="0" Description="A.是否启用反面避让参数组2（1：启用，0：不启用）" ReadOnly="true" />
+    <BasicSetup Name="FaceBAviod2Y" Value="-19" Description="A.启用反面避让参数组2时，下钻包Y轴临界值(G54)" ReadOnly="true" />
+    <BasicSetup Name="FaceBLeft2X" Value="520" Description="A.反面避让参数组2中夹钳避让范围：小值(G54)" ReadOnly="true" />
+    <BasicSetup Name="FaceBRight2X" Value="630" Description="A.反面避让参数组2中夹钳避让范围：大值(G54)" ReadOnly="true" />
+    <BasicSetup Name="RollerUseLimitWidth" Value="60" Description="B.宽度小于该尺寸板件,打水平孔不启用压轮" ReadOnly="true" />
+    <BasicSetup Name="SawSafeDistance1Y" Value="108" Description="A.钻包3,X锯片到夾爪的安全距离(指的是Y方向的距离)" ReadOnly="true" />
+    <BasicSetup Name="SawSafeDistance2Y" Value="40" Description="A.钻包1,X锯片到夾爪的安全距离(指的是Y方向的距离)" ReadOnly="true" />
+    <BasicSetup Name="BlindSoltStyle" Value="2" Description="A.盲槽锯片加工方式：0不使用锯片；1保证深度；2保证长度" ReadOnly="true" />
+    <BasicSetup Name="SawRForSlot" Value="100" Description="A.锯片真实半径，加工盲槽的时候会用到" ReadOnly="true" />
+    <BasicSetup Name="XSlotMacDir" Value="2" Description="A.X方向槽的加工方向：0不指定；1从X负方向开始加工；2从X正方向开始加工" ReadOnly="true" />
+    <BasicSetup Name="LenLimitForExit" Value="0" Description="C.长度大于该尺寸板件强制后出料，默认前出料方式时起作用(仅用于手动机型)" ReadOnly="true" />
+    <BasicSetup Name="SideUsedXPos" Value="100" Description="A.允许侧靠打出的位置，板头越过该位置允许打出侧靠(G54坐标)" ReadOnly="false" />
+    <BasicSetup Name="MaxVerHoleDepth" Value="20" Description="B.允许垂直孔加工的最大深度" ReadOnly="true" />
+    <BasicSetup Name="EnDadoToolOffset" Value="1" Description="B.榫槽加工是否考虑刀具半径补偿，不启用时刀具中心在榫槽起点直接下刀。0：不启用；1：启用" ReadOnly="true" />
+    <BasicSetup Name="MortisedefaultSet" Value="1" Description="B.不指定榫槽宽度(宽度为0)时，默认用主轴刀具切割。0：否；1：是。" ReadOnly="true" />
+    <BasicSetup Name="EnSideMinThickness" Value="15.8" Description="B.当板材厚度小于等于该数值不启用侧靠" ReadOnly="true" />
+    <BasicSetup Name="EnMachingMprOutLine" Value="0" Description="B.是否加工mpr文件异形外轮廓数据,此处指异形板件不指定刀具信息的轮廓信息。0：否；1：是" ReadOnly="true" />
+    <BasicSetup Name="MachineMirrorType" Value="0" Description="A.非标机型Y轴镜像加工。0：否；1：是" ReadOnly="true" />
+    <BasicSetup Name="SpindleStartVel" Value="1000" Description="C.主轴加工时起始端的加工速度(单位：mm/min)，仅对榫槽起作用" ReadOnly="false" />
+    <BasicSetup Name="SpindleEndVel" Value="500" Description="C.主轴加工时末端的加工速度(单位：mm/min)，仅对榫槽起作用" ReadOnly="false" />
+    <BasicSetup Name="AllowLoading" Value="M401" Description="B.允许上料M代码（M401）" ReadOnly="true" />
+    <BasicSetup Name="XMinPosSideInLimit" Value="120" Description="A.换钳收侧靠X范围下极限（G54坐标）" ReadOnly="false" />
+    <BasicSetup Name="XMaxPosSideInLimit" Value="500" Description="A.换钳收侧靠X范围上极限（G54坐标）" ReadOnly="false" />
+    <BasicSetup Name="Z1Postion" Value="" Description="A.定位缸打出后，接触到台面时的绝对坐标(G54)。定位柱在机头机型需要设置此参数(注意：加工时，CAM会控制定位升起板材厚度的1/3，设定的时候，就以接触台面设置即可)" ReadOnly="false" />
+    <BasicSetup Name="ShapesNotInLoCol" Value="" Description="A.定位柱侧有异形时，定位位置调整。定位柱在机头机型需要设置此参数。0：否；1：是。" ReadOnly="false" />
+    <BasicSetup Name="XmlLogSharePath" Value="" Description="B.XML加工记录共享文件目录" ReadOnly="true" />
+    <BasicSetup Name="MachineType" Value="1" Description="A.机器类型型号:1：六面钻单钻包;2：六面钻双钻包" ReadOnly="true" />
+	<BasicSetup Name="McEyeHasPart" Value="M460" Description="B.长度边加工边测量方式，检测有板M代码（仅手动上料机型）" ReadOnly="true" />
+    <BasicSetup Name="McEyeHasNoPart" Value="M461" Description="B.长度边加工边测量方式，检测无板M代码（仅手动上料机型）" ReadOnly="true" />
+    <BasicSetup Name="EyeCheckRange" Value="5" Description="B.长度边加工边测量方式，检测偏移量（仅手动上料机型）" ReadOnly="true" />
+    <BasicSetup Name="McPartDetection" Value="M415" Description="B.下料平台有料检测M代码" ReadOnly="true" />
+    <BasicSetup Name="EnCatchProcess" Value="0" Description="C.是否启用打哪抓哪功能。0：不启用；1：启用" ReadOnly="false" />
+    <BasicSetup Name="WidthForCatchProcess" Value="120" Description="C.板件宽度小于等于该数值，启用打哪抓哪功能。" ReadOnly="false" />
+    <BasicSetup Name="NoFloatingTable" Value="1" Description="B.是否无浮动台面 0:否；1：是 " ReadOnly="true" />
+    <BasicSetup Name="NoSideDevice" Value="1" Description="B.是否无侧靠装置 0:否；1：是" ReadOnly="true" />	
+	<BasicSetup Name="EnHingeInPawSide" Value="1" Description="B.铰链孔强制在夹钳侧 0:不启用；1：启用" ReadOnly="true" />
+    <BasicSetup Name="HingeGuidingHoleLimit" Value="25" Description="C.忽略距离铰链孔该距离之内的5mm引孔，按照孔圆心之间距离计算，单位mm" ReadOnly="false" />
+	<BasicSetup Name="NoLowSupport" Value="1" Description="B.是否没有下托料 0:否；1：是" ReadOnly="true" />
+	<BasicSetup Name="HingeHoleInBack" Value="1" Description="C.35mm铰链孔强制使用下钻包加工。0:默认加工；1：强制下钻包加工" ReadOnly="false" />
+  </BasicSetups>
+  <ButtonClickSetups>
+    <ButtonClickSetup Name="X+" Address="500" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="X-" Address="501" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Y+" Address="502" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Y-" Address="503" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Z+" Address="504" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Z-" Address="505" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Y2+" Address="506" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Y2-" Address="507" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Z2+" Address="508" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="Z2-" Address="509" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="U+" Address="510" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="U-" Address="511" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="W+" Address="512" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="W-" Address="513" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="A+" Address="514" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="A-" Address="515" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="B+" Address="516" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="B-" Address="517" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="C+" Address="518" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="C-" Address="519" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="V+" Address="520" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="V-" Address="521" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="所有轴回原点" Address="522" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="X夹钳松开" Address="523" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="X夹钳夹持" Address="524" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="U夹钳松开" Address="525" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="U夹钳夹持" Address="526" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="X超程释放" Address="527" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="复位" Address="528" PressNum="1" UpliftNum="0" Enabled="false" />
+    <ButtonClickSetup Name="上料复位" Address="529" PressNum="1" UpliftNum="0" Enabled="false" />
+  </ButtonClickSetups>
+  <MCodeSetups>
+    <MCodeSetup MCode="1" SelectCode="T1" BackCode="M301" />
+    <MCodeSetup MCode="2" SelectCode="T2" BackCode="M304" />
+    <MCodeSetup MCode="51" SelectCode="T51" BackCode="M350" />
+    <MCodeSetup MCode="52" SelectCode="T52" BackCode="M350" />
+    <MCodeSetup MCode="53" SelectCode="T53" BackCode="M350" />
+    <MCodeSetup MCode="54" SelectCode="T54" BackCode="M350" />
+    <MCodeSetup MCode="55" SelectCode="T55" BackCode="M350" />
+    <MCodeSetup MCode="56" SelectCode="T56" BackCode="M350" />
+    <MCodeSetup MCode="57" SelectCode="T57" BackCode="M350" />
+    <MCodeSetup MCode="58" SelectCode="T58" BackCode="M350" />
+    <MCodeSetup MCode="59" SelectCode="T59" BackCode="M350" />
+    <MCodeSetup MCode="60" SelectCode="T60" BackCode="M350" />
+    <MCodeSetup MCode="21" SelectCode="T21" BackCode="M350" />
+    <MCodeSetup MCode="22" SelectCode="T22" BackCode="M350" />
+    <MCodeSetup MCode="23" SelectCode="T23" BackCode="M350" />
+    <MCodeSetup MCode="24" SelectCode="T24" BackCode="M350" />
+    <MCodeSetup MCode="25" SelectCode="T25" BackCode="M350" />
+    <MCodeSetup MCode="26" SelectCode="T26" BackCode="M350" />
+    <MCodeSetup MCode="27" SelectCode="T27" BackCode="M350" />
+    <MCodeSetup MCode="28" SelectCode="T28" BackCode="M350" />
+    <MCodeSetup MCode="29" SelectCode="T29" BackCode="M350" />
+    <MCodeSetup MCode="30" SelectCode="T30" BackCode="M350" />
+    <MCodeSetup MCode="31" SelectCode="T31" BackCode="M350" />
+    <MCodeSetup MCode="32" SelectCode="T32" BackCode="M350" />
+    <MCodeSetup MCode="35" SelectCode="T35" BackCode="M350" />
+    <MCodeSetup MCode="36" SelectCode="T36" BackCode="M350" />
+    <MCodeSetup MCode="37" SelectCode="T37" BackCode="M350" />
+    <MCodeSetup MCode="38" SelectCode="T38" BackCode="M350" />
+    <MCodeSetup MCode="39" SelectCode="T39" BackCode="M350" />
+    <MCodeSetup MCode="40" SelectCode="T40" BackCode="M350" />
+    <MCodeSetup MCode="41" SelectCode="T41" BackCode="M350" />
+    <MCodeSetup MCode="42" SelectCode="T42" BackCode="M350" />
+    <MCodeSetup MCode="61" SelectCode="T61" BackCode="M350" />
+    <MCodeSetup MCode="62" SelectCode="T62" BackCode="M350" />
+    <MCodeSetup MCode="63" SelectCode="T63" BackCode="M350" />
+    <MCodeSetup MCode="64" SelectCode="T64" BackCode="M350" />
+    <MCodeSetup MCode="65" SelectCode="T65" BackCode="M350" />
+    <MCodeSetup MCode="66" SelectCode="T66" BackCode="M350" />
+    <MCodeSetup MCode="67" SelectCode="T67" BackCode="M350" />
+    <MCodeSetup MCode="68" SelectCode="T68" BackCode="M350" />
+    <MCodeSetup MCode="69" SelectCode="T69" BackCode="M350" />
+    <MCodeSetup MCode="70" SelectCode="T70" BackCode="M350" />
+    <MCodeSetup MCode="71" SelectCode="T71" BackCode="M350" />
+    <MCodeSetup MCode="72" SelectCode="T72" BackCode="M350" />
+    <MCodeSetup MCode="75" SelectCode="T75" BackCode="M350" />
+    <MCodeSetup MCode="76" SelectCode="T76" BackCode="M350" />
+    <MCodeSetup MCode="77" SelectCode="T77" BackCode="M350" />
+    <MCodeSetup MCode="78" SelectCode="T78" BackCode="M350" />
+    <MCodeSetup MCode="79" SelectCode="T79" BackCode="M350" />
+    <MCodeSetup MCode="80" SelectCode="T80" BackCode="M350" />
+    <MCodeSetup MCode="81" SelectCode="T81" BackCode="M350" />
+    <MCodeSetup MCode="82" SelectCode="T82" BackCode="M350" />
+  </MCodeSetups>
+  <RevStopSetups>
+    <RevStopSetup Name="启动代码" Code="//Size: %X*%Y*%T&#xD;&#xA;M350&#xD;&#xA;//M425         定位缸起&#xD;&#xA;//G04 P300&#xD;&#xA;M349&#xD;&#xA;G90 G53 Z1=0 Z2=0 Z3=0&#xD;&#xA;M345&#xD;&#xA;M308&#xD;&#xA;M305&#xD;&#xA;M448&#xD;&#xA;G00 X1=%U X2=%I Y1=%B Y2=%C Y3=%A W=%K&#xD;&#xA;M343&#xD;&#xA;M346&#xD;&#xA;//M349&#xD;&#xA;M305&#xD;&#xA;%P&#xD;&#xA;%Q &#xD;&#xA;G04 P1000&#xD;&#xA;M307&#xD;&#xA;G04 P2000&#xD;&#xA;M306&#xD;&#xA;M415" />
+    <RevStopSetup Name="结束代码" Code="// push exit&#xD;&#xA;M05&#xD;&#xA;M348&#xD;&#xA;G53 Z1=0 Z2=0 Z3=0&#xD;&#xA;M345&#xD;&#xA;M308&#xD;&#xA;%L&#xD;&#xA;M405&#xD;&#xA;//G53 G00 W=0&#xD;&#xA;M350&#xD;&#xA;M342&#xD;&#xA;M346&#xD;&#xA;M30" />
+  </RevStopSetups>
+  <Scan IP="192.168.0.26" Port="9004" SystemIP="127.0.0.1" SystemPort="9000" ZkSystemIP="" ZkSystemPort="" AddOilCycleTime="0" DeviceID="" ErpAddr="" ZkDatabaseIP="" MesAddr="" EnStatus="false" />
+  <PressUpDownSetups>
+    <PressUpDownSetup PackageID="Top2" Type="VerticalRoller" Description="钻包1压料1" Length="56" Width="36" CenterX="240" CenterY="33" PressedZ="0" UpCode="M318" DownCode="M317" UpDelay="0" DownDelay="100" PressID="VR_U" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top2" Type="VerticalClamp" Description="钻包1压料2" Length="50" Width="125" CenterX="169" CenterY="-133.5" PressedZ="0" UpCode="M320" DownCode="M319" UpDelay="0" DownDelay="1" PressID="VC" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top2" Type="HorizontalClamp" Description="钻包1压料3" Length="245" Width="48" CenterX="74.5" CenterY="7" PressedZ="-10" UpCode="M322" DownCode="M321" UpDelay="0" DownDelay="1" PressID="HC" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top2" Type="HorizontalRoller" Description="钻包1压料4" Length="36" Width="56" CenterX="160" CenterY="-48" PressedZ="0" UpCode="M324" DownCode="M323" UpDelay="0" DownDelay="100" PressID="HR_R" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top2" Type="HorizontalRoller" Description="钻包1压料5" Length="36" Width="56" CenterX="-105" CenterY="-48" PressedZ="0" UpCode="M326" DownCode="M325" UpDelay="0" DownDelay="100" PressID="HR_L" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top2" Type="VerticalRoller" Description="钻包1压料6" Length="56" Width="36" CenterX="242" CenterY="-228" PressedZ="0" UpCode="M328" DownCode="M327" UpDelay="0" DownDelay="100" PressID="VR_D" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="VerticalRoller" Description="钻包3压料1" Length="56" Width="36" CenterX="240" CenterY="-33" PressedZ="0" UpCode=" M330" DownCode=" M329" UpDelay="0" DownDelay="100" PressID="VR_D" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="VerticalClamp" Description="钻包3压料2" Length="57" Width="125" CenterX="169" CenterY="133.5" PressedZ="0" UpCode="M332" DownCode="M331" UpDelay="0" DownDelay="1" PressID="VC" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="HorizontalClamp" Description="钻包3压料3" Length="245" Width="48" CenterX="74.5" CenterY="-7" PressedZ="0" UpCode="M334" DownCode="M333" UpDelay="0" DownDelay="1" PressID="HC" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="HorizontalRoller" Description="钻包3压料4" Length="36" Width="56" CenterX="160" CenterY="48" PressedZ="0" UpCode="M336" DownCode="M335" UpDelay="0" DownDelay="100" PressID="HR_R" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="HorizontalRoller" Description="钻包3压料5" Length="36" Width="56" CenterX="-105" CenterY="48" PressedZ="0" UpCode="M338" DownCode="M337" UpDelay="0" DownDelay="100" PressID="HR_L" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="Top1" Type="VerticalRoller" Description="钻包3压料6" Length="56" Width="36" CenterX="242" CenterY="228" PressedZ="0" UpCode="M340" DownCode="M339" UpDelay="0" DownDelay="100" PressID="VR_U" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="TopMain" Type="MainPress" Description="上主轴压料1" Length="213" Width="80" CenterX="226.5" CenterY="-365" PressedZ="33" UpCode="M314" DownCode="M313" UpDelay="0" DownDelay="100" PressID="UZ" ReadOnly="false" UpDown="0" />
+    <PressUpDownSetup PackageID="BottomMain" Type="Underlay" Description="下托料" Length="120" Width="45" CenterX="32" CenterY="-32" PressedZ="45.89" UpCode="" DownCode="" UpDelay="0" DownDelay="0" PressID="DZ" ReadOnly="false" UpDown="0" />
+  </PressUpDownSetups>
+  <DrillInfos>
+    <DrillInfo ID="1" Type="Spindle" Diameter="6" PosX="538.9" PosY="-396.435" PosZ="-26" RelPosX="213.4" RelPosY="-356.435" RelPosZ="-26" SafeDistance="10" DownVel="6000" MachiningVel="5000" MillingVel="4000" DelayTime="0" Enable="true" IsLone="true" PackageID="TopMain" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="21" Type="VerDrill" Diameter="10" PosX="325.5" PosY="-40" PosZ="0" RelPosX="0" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="true" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="22" Type="VerDrill" Diameter="8" PosX="357.5" PosY="-40" PosZ="0" RelPosX="32" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="23" Type="VerDrill" Diameter="8" PosX="389.5" PosY="-40" PosZ="0" RelPosX="64" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="24" Type="VerDrill" Diameter="5" PosX="453.5" PosY="-40" PosZ="0" RelPosX="128" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="25" Type="VerDrill" Diameter="5" PosX="485.5" PosY="-40" PosZ="0" RelPosX="160" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="26" Type="VerDrill" Diameter="15" PosX="517.5" PosY="-40" PosZ="0" RelPosX="192" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="300" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="27" Type="VerDrill" Diameter="8" PosX="517.5" PosY="-72" PosZ="0" RelPosX="192" RelPosY="-32" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="28" Type="VerDrill" Diameter="10" PosX="517.5" PosY="-104" PosZ="0" RelPosX="192" RelPosY="-64" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="29" Type="VerDrill" Diameter="20" PosX="517.5" PosY="-136" PosZ="0" RelPosX="192" RelPosY="-96" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="30" Type="VerDrill" Diameter="5" PosX="517.5" PosY="-168" PosZ="0" RelPosX="192" RelPosY="-128" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="31" Type="VerDrill" Diameter="8" PosX="517.5" PosY="-200" PosZ="0" RelPosX="192" RelPosY="-160" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="32" Type="VerDrill" Diameter="35" PosX="517.5" PosY="-232" PosZ="-1.5" RelPosX="192" RelPosY="-192" RelPosZ="-1.5" SafeDistance="15" DownVel="5000" MachiningVel="2000" MillingVel="0" DelayTime="500" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="35" Type="HorRightDirection" Diameter="8" PosX="450.5" PosY="-72" PosZ="-6.7" RelPosX="125" RelPosY="-32" RelPosZ="-6.7" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="36" Type="HorLeftDirection" Diameter="8" PosX="264" PosY="-72" PosZ="-6.85" RelPosX="-61.5" RelPosY="-32" RelPosZ="-6.85" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="37" Type="HorRightDirection" Diameter="8" PosX="450.5" PosY="-104" PosZ="-6.7" RelPosX="125" RelPosY="-64" RelPosZ="-6.7" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="38" Type="HorLeftDirection" Diameter="8" PosX="264" PosY="-104" PosZ="-6.85" RelPosX="-61.5" RelPosY="-64" RelPosZ="-6.85" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="39" Type="HorUpDirection" Diameter="8" PosX="549.5" PosY="-43" PosZ="-6.4" RelPosX="224" RelPosY="-3" RelPosZ="-6.4" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="40" Type="HorDownDirection" Diameter="8" PosX="549.5" PosY="-230" PosZ="-6.1" RelPosX="224" RelPosY="-190" RelPosZ="-6.1" SafeDistance="10" DownVel="5000" MachiningVel="5000" MillingVel="0" DelayTime="0" Enable="false" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="41" Type="HorUpDirection" Diameter="8" PosX="581.5" PosY="-43" PosZ="-6.4" RelPosX="256" RelPosY="-3" RelPosZ="-6.4" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="42" Type="HorDownDirection" Diameter="8" PosX="581.5" PosY="-230" PosZ="-6.1" RelPosX="256" RelPosY="-190" RelPosZ="-6.1" SafeDistance="10" DownVel="5000" MachiningVel="5000" MillingVel="0" DelayTime="0" Enable="false" IsLone="true" PackageID="Top2" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="61" Type="VerDrill" Diameter="10" PosX="325.5" PosY="0" PosZ="0" RelPosX="0" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="true" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="62" Type="VerDrill" Diameter="8" PosX="357.5" PosY="0" PosZ="0" RelPosX="32" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="63" Type="VerDrill" Diameter="8" PosX="389.5" PosY="0" PosZ="0" RelPosX="64" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="64" Type="VerDrill" Diameter="5" PosX="453.5" PosY="0" PosZ="0" RelPosX="128" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="65" Type="VerDrill" Diameter="5" PosX="485.5" PosY="0" PosZ="0" RelPosX="160" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="66" Type="VerDrill" Diameter="15" PosX="517.5" PosY="0" PosZ="0" RelPosX="192" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="300" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="67" Type="VerDrill" Diameter="8" PosX="517.5" PosY="32" PosZ="0" RelPosX="192" RelPosY="32" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="68" Type="VerDrill" Diameter="10" PosX="517.5" PosY="64" PosZ="0" RelPosX="192" RelPosY="64" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="69" Type="VerDrill" Diameter="20" PosX="517.5" PosY="96" PosZ="0" RelPosX="192" RelPosY="96" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="70" Type="VerDrill" Diameter="5" PosX="517.5" PosY="128" PosZ="0" RelPosX="192" RelPosY="128" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="71" Type="VerDrill" Diameter="8" PosX="517.5" PosY="160" PosZ="0" RelPosX="192" RelPosY="160" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="72" Type="VerDrill" Diameter="35" PosX="517.5" PosY="192" PosZ="0" RelPosX="192" RelPosY="192" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="2000" MillingVel="0" DelayTime="500" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="75" Type="HorRightDirection" Diameter="8" PosX="450.5" PosY="32" PosZ="-7.15" RelPosX="125" RelPosY="32" RelPosZ="-7.15" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="76" Type="HorLeftDirection" Diameter="8" PosX="264" PosY="32" PosZ="-7.15" RelPosX="-61.5" RelPosY="32" RelPosZ="-7.15" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="77" Type="HorRightDirection" Diameter="8" PosX="450.5" PosY="64" PosZ="-7.15" RelPosX="125" RelPosY="64" RelPosZ="-7.15" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="78" Type="HorLeftDirection" Diameter="8" PosX="264" PosY="64" PosZ="-7.15" RelPosX="-61.5" RelPosY="64" RelPosZ="-7.15" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="79" Type="HorUpDirection" Diameter="8" PosX="549.5" PosY="190" PosZ="-6.9" RelPosX="224" RelPosY="190" RelPosZ="-6.9" SafeDistance="10" DownVel="5000" MachiningVel="5000" MillingVel="0" DelayTime="0" Enable="false" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="80" Type="HorDownDirection" Diameter="8" PosX="549.5" PosY="3" PosZ="-7" RelPosX="224" RelPosY="3" RelPosZ="-7" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="81" Type="HorUpDirection" Diameter="8" PosX="581.5" PosY="190" PosZ="-6.9" RelPosX="256" RelPosY="190" RelPosZ="-6.9" SafeDistance="10" DownVel="5000" MachiningVel="5000" MillingVel="0" DelayTime="0" Enable="false" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="82" Type="HorDownDirection" Diameter="8" PosX="581.5" PosY="3" PosZ="-7" RelPosX="256" RelPosY="3" RelPosZ="-7" SafeDistance="10" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Top1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="51" Type="VerDrill" Diameter="10" PosX="544.6" PosY="-64" PosZ="0" RelPosX="0" RelPosY="-64" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="52" Type="VerDrill" Diameter="5" PosX="544.6" PosY="-32" PosZ="0" RelPosX="0" RelPosY="-32" RelPosZ="0" SafeDistance="20" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="1000" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="53" Type="VerDrill" Diameter="5" PosX="544.6" PosY="0" PosZ="0" RelPosX="0" RelPosY="0" RelPosZ="0" SafeDistance="15" DownVel="3000" MachiningVel="3000" MillingVel="0" DelayTime="300" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="true" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="54" Type="VerDrill" Diameter="35" PosX="576.6" PosY="0" PosZ="-1" RelPosX="32" RelPosY="0" RelPosZ="-1" SafeDistance="15" DownVel="5000" MachiningVel="2000" MillingVel="0" DelayTime="1000" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="55" Type="VerDrill" Diameter="5" PosX="608.6" PosY="0" PosZ="-1" RelPosX="64" RelPosY="0" RelPosZ="-1" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="200" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="56" Type="VerDrill" Diameter="10" PosX="608.6" PosY="-32" PosZ="0" RelPosX="64" RelPosY="-32" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="2000" MillingVel="0" DelayTime="100" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="57" Type="VerDrill" Diameter="8" PosX="608.6" PosY="-64" PosZ="0" RelPosX="64" RelPosY="-64" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="2000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="58" Type="VerDrill" Diameter="15" PosX="576.6" PosY="-64" PosZ="0" RelPosX="32" RelPosY="-64" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="3000" MillingVel="0" DelayTime="500" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="59" Type="VerDrill" Diameter="0" PosX="576.6" PosY="-32" PosZ="0" RelPosX="32" RelPosY="-32" RelPosZ="0" SafeDistance="15" DownVel="5000" MachiningVel="4000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="Bottom1" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+    <DrillInfo ID="2" Type="Spindle" Diameter="3" PosX="565.8" PosY="114.35" PosZ="11" RelPosX="21.2" RelPosY="114.35" RelPosZ="11" SafeDistance="10" DownVel="3000" MachiningVel="8000" MillingVel="0" DelayTime="0" Enable="true" IsLone="true" PackageID="BottomMain" BasedDrill="false" Throughdrill="false" LastLen="0" InitialVel="0" DrillLen="0" PackageEnable="true" WorkStatus="0" />
+  </DrillInfos>
+</ParameterSettings>

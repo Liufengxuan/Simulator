@@ -25,6 +25,18 @@ void Simulator::SimWorker::DoWork(int param)
                         break;
                     }
                 }
+                if(CURRENT_CMD->funcType==NcCode::FuncType::stop)
+                {
+                    if(timer.hasExpired(CURRENT_CMD->stop))
+                    {
+                         cmdIsFinish=true;
+                    }else{
+                        cmdIsFinish=false;
+                        continue;
+                    }
+
+                }
+
                 //都移动完毕后，将当前索引换到下一行
                 if(cmdIsFinish)CURRENT_CMD_INDEX++;
             }
@@ -103,7 +115,8 @@ void Simulator::SimWorker::DoWork(int param)
             //暂停
             if(CURRENT_CMD->funcType==NcCode::FuncType::stop)
             {
-                QThread::msleep(CURRENT_CMD->stop);
+                timer.restart();
+              //  QThread::msleep(CURRENT_CMD->stop);
             }
             //钻头打下代码
             if( CURRENT_CMD->funcType==NcCode::FuncType::tCode)
@@ -226,7 +239,6 @@ void Simulator::SimWorker::DoWork(int param)
         }
         if(workState==WORK_STATE::EXIT)
         {
-
             return;
         }
         if(workState==WORK_STATE::RESET)
@@ -246,13 +258,16 @@ void Simulator::SimWorker::DoWork(int param)
 bool Simulator::SimWorker::LoadSupportingData(const QString &p1,const QString &p2,const QString &p3){
 
     //解析配置文件
-    QString path=QString("%1%2").arg( qApp->applicationDirPath()).arg(p1);
-    QString path2=QString("%1%2").arg( qApp->applicationDirPath()).arg(p2);
+//    QString path=QString("%1%2").arg( qApp->applicationDirPath()).arg(p1);
+//    QString path2=QString("%1%2").arg( qApp->applicationDirPath()).arg(p2);
+    QString path=p1;
+    QString path2=p2;
     xml=new XMLParsing();
     bool rst=  xml->Parsing(path,path2);
 
     //预解析nc代码
-    QString ncPath=QString("%1%2").arg( qApp->applicationDirPath()).arg(p3);
+    //QString ncPath=QString("%1%2").arg( qApp->applicationDirPath()).arg(p3);
+    QString ncPath=p3;
     nc=new NcParsing();
     int count=nc->Parsing(ncPath);
 

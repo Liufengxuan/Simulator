@@ -17,6 +17,8 @@ void MainForm::showEvent(QShowEvent *event)
     static  bool executed=false;
     if(executed)return;
 
+ // QMessageBox::information(NULL, "Title",qApp->applicationDirPath(), QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
+
     //实例化仿真解析线程
     workThread=new QThread;
     //实例化仿真工作类
@@ -654,6 +656,7 @@ void MainForm::wheelEvent(QWheelEvent *event){
 
 MainForm::~MainForm()
 {
+
     simWork->workState=Simulator::EXIT;
     workThread->quit();
     workThread->wait();

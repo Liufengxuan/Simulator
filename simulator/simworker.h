@@ -9,6 +9,7 @@
 #include <ncparsing.h>
 #include<xmlparsing.h>
 #include"simparameter.h"
+#include "QElapsedTimer"
 using namespace Parameters;
 using namespace NcCode;
 
@@ -41,6 +42,7 @@ public slots:
     void DoWork(int param);
 
 public:
+
 
     const QString workStateString[4] = {"RUN","STOP","EXIT","RESET"};
     ///获取及设置线程的工作状态
@@ -106,6 +108,8 @@ public:
     ///步进值
     int STEP_VALUE=4;
 private:
+
+    QElapsedTimer timer;
     ///存储实时坐标
     QMap<QString,float> realTimePos;
     ///存储实时M代码
