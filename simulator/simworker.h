@@ -102,7 +102,7 @@ public:
     ///是否Y轴镜像
     int MachineMirrorType=0;
     ///是否是单钻包（1）
-    QString MachineType="2";
+    int MachineType=2;
 
     ///机床上所有钻头的信息。
     QVector<m_Drill*> drills;

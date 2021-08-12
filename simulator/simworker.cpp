@@ -270,8 +270,7 @@ bool Simulator::SimWorker::LoadSupportingData(const QString &p1,const QString &p
     QString ncPath=p3;
     nc=new NcParsing();
     int count=nc->Parsing(ncPath);
-    //初始化实时坐标列表；
-    InitRealTimePos();
+
 
     if(rst&&count>0)
     {
@@ -346,13 +345,14 @@ bool Simulator::SimWorker::LoadSupportingData(const QString &p1,const QString &p
             if(pit->Name=="McSMainPreStart")
                 this->McSMainPreStart=pit->Value;
             if(pit->Name=="MachineType")
-                this->MachineType=pit->Value;
+                this->MachineType=pit->Value.isEmpty()?2:pit->Value.toInt();
             if(pit->Name=="MachineMirrorType")
                 this->MachineMirrorType=pit->Value.isEmpty()?0:pit->Value.toInt();
 
         }
-        if(MachineType=="1")realTimePos.remove("Y3");
 
+        //初始化实时坐标列表；
+        InitRealTimePos();
 
         return true;
     }
@@ -373,6 +373,8 @@ void Simulator::SimWorker::InitRealTimePos(){
     realTimePos.insert("Z2",DEFAULT_POS);
     realTimePos.insert("Z3",DEFAULT_POS);
     realTimePos.insert("PART",DEFAULT_POS);
+
+  if(MachineType==1)realTimePos.remove("Y3");
 }
 Simulator::SimWorker::~SimWorker(){
     qDebug()<<"线程析构函数";

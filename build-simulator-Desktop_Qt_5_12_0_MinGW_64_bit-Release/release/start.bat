@@ -1,0 +1,1 @@
+start .\simulator.exe .\Config\ParameterSettings.xml .\test2.xml .\test2.nc

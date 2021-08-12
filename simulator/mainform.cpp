@@ -425,9 +425,10 @@ void MainForm::DrawWord(QPainter &painter){
     QString  txt;
     int i=1;
 
-    painter.drawText(5,size().height()-i*h, QString("{%1}/{%2}")
+    painter.drawText(5,size().height()-i*h, QString("{%1}/{%2}/{%3}")
                      .arg(simWork->workStateString[simWork->workState])
-            .arg(simWork->MachineMirrorType));
+            .arg(simWork->MachineMirrorType==0?"非镜像":"镜像")
+            .arg(simWork->MachineType==2?"双钻包":"单钻包"));
     i++;
     painter.drawText(5,size().height()-i*h, QString("调刀: %1").arg(REAL_M_T_CODE.join("/")));
     i++;
