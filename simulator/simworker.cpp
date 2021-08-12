@@ -270,10 +270,8 @@ bool Simulator::SimWorker::LoadSupportingData(const QString &p1,const QString &p
     QString ncPath=p3;
     nc=new NcParsing();
     int count=nc->Parsing(ncPath);
-
     //初始化实时坐标列表；
     InitRealTimePos();
-
 
     if(rst&&count>0)
     {
@@ -347,14 +345,20 @@ bool Simulator::SimWorker::LoadSupportingData(const QString &p1,const QString &p
                 this->McMainPreStart=pit->Value;
             if(pit->Name=="McSMainPreStart")
                 this->McSMainPreStart=pit->Value;
+            if(pit->Name=="MachineType")
+                this->MachineType=pit->Value;
             if(pit->Name=="MachineMirrorType")
                 this->MachineMirrorType=pit->Value.isEmpty()?0:pit->Value.toInt();
 
         }
+        if(MachineType=="1")realTimePos.remove("Y3");
 
 
         return true;
     }
+
+
+
     return false;
 }
 void Simulator::SimWorker::InitRealTimePos(){
